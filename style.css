@@ -149,7 +149,8 @@ nav {
   text-align: center;
 }
 
-.ft-title {
+.ft-title,
+.ft-text-bx .ft-text-bx-title {
   display: block;
   color: var(--dark-blue);
   font-weight: var(--bold);
@@ -174,21 +175,95 @@ nav {
 .tab {
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .tab .links {
   padding: 1rem 2rem;
+  margin: 0 0.2rem;
   background-color: transparent;
   border: none;
-  color: var(--grayish-blue);
+  color: var(--dark-blue);
+  font-weight: var(--light);
   cursor: pointer;
   font-size: 1rem;
 }
 
-.tab .links:active {
-  border-bottom: 2px solid var(--soft-red);
+.tab .active {
+  border-bottom: 3px solid var(--soft-red);
   color: var(--dark-blue);
+}
+
+.tab .links:hover {
+  color: var(--soft-red);
+}
+
+.tabcontent-bx {
+  max-width: var(--desktop-width);
+  padding: 0 3rem;
+}
+
+.tabcontent {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 7rem;
+}
+
+.ft-text-bx {
+  width: 45%;
+  margin-top: 3rem;
+}
+
+.ft-text-bx .ft-text-bx-desc {
+  margin: auto;
+  color: var(--grayish-blue);
+  font-weight: var(--light);
+  font-size: var(--size);
+  line-height: 1.8rem;
+}
+
+.ft-text-bx-btn {
+  margin-top: 3rem;
+}
+
+.ft-text-bx-btn a {
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: var(--bold);
+  color: white;
+  background-color: var(--soft-blue);
+  border: 2px solid var(--soft-blue);
+}
+
+.ft-text-bx-btn a:hover {
+  background-color: white;
+  color: var(--soft-blue);
+  transition-duration: 300ms;
+}
+
+#downloads {
+  max-width: var(--desktop-width);
+  margin: 7rem auto;
+  text-align: center;
+}
+
+.dw-title {
+  display: block;
+  color: var(--dark-blue);
+  font-weight: var(--bold);
+  font-size: 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.dw-desc {
+  width: 44%;
+  margin: auto;
+  color: var(--grayish-blue);
+  font-weight: var(--light);
+  font-size: var(--size);
+  line-height: 1.8rem;
 }
 
 .attribution {

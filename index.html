@@ -79,27 +79,99 @@
     <!-- tabs -->
     <section id="tabs">
       <div class="tab">
-        <button class="links">Simple Bookmarking</button>
-        <button class="links">Speedy Searching</button>
-        <button class="links">Easy Sharing</button>
+        <button class="links" onclick="openTab(event, 'simple')">
+          Simple Bookmarking
+        </button>
+        <button class="links" onclick="openTab(event, 'speedy')">
+          Speedy Searching
+        </button>
+        <button class="links" onclick="openTab(event, 'easy')">
+          Easy Sharing
+        </button>
+      </div>
+
+      <div class="tabcontent-bx">
+        <div id="simple" class="tabcontent">
+          <div>
+            <img src="./images/illustration-features-tab-1.svg" alt="" />
+          </div>
+          <div class="ft-text-bx">
+            <div class="ft-text-bx-title">
+              <span>Bookmark in one click</span>
+            </div>
+            <div class="ft-text-bx-desc">
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+            </div>
+            <div class="ft-text-bx-btn">
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div id="speedy" class="tabcontent">
+          <div>
+            <img src="./images/illustration-features-tab-2.svg" alt="" />
+          </div>
+          <div class="ft-text-bx">
+            <div class="ft-text-bx-title">
+              <span>Intelligent search</span>
+            </div>
+            <div class="ft-text-bx-desc">
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+            </div>
+            <div class="ft-text-bx-btn">
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div id="easy" class="tabcontent">
+          <div>
+            <img src="./images/illustration-features-tab-3.svg" alt="" />
+          </div>
+          <div class="ft-text-bx">
+            <div class="ft-text-bx-title">
+              <span>Share your bookmarks</span>
+            </div>
+            <div class="ft-text-bx-desc">
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+            </div>
+            <div class="ft-text-bx-btn">
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ./tabs -->
 
-    Simple Bookmarking Speedy Searching Easy Sharing Bookmark in one click
-    Organize your bookmarks however you like. Our simple drag-and-drop interface
-    gives you complete control over how you manage your favourite sites. More
-    Info Intelligent search Our powerful search feature will help you find saved
-    sites in no time at all. No need to trawl through all of your bookmarks.
-    More Info Share your bookmarks Easily share your bookmarks and collections
-    with others. Create a shareable link that you can send at the click of a
-    button. More Info Download the extension We’ve got more browsers in the
-    pipeline. Please do let us know if you’ve got a favourite you’d like us to
-    prioritize. Add to Chrome Minimum version 62 Add & Install Extension Add to
-    Firefox Minimum version 55 Add & Install Extension Add to Opera Minimum
-    version 46 Add & Install Extension Frequently Asked Questions Here are some
-    of our FAQs. If you have any other questions you’d like answered please feel
-    free to email us.
+    <!-- downloads -->
+    <section id="downloads">
+      <div>
+        <span class="dw-title">Download the extension</span>
+      </div>
+      <div class="dw-desc">
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+    </section>
+    <!-- ./downloads -->
+
+    Add to Chrome Minimum version 62 Add & Install Extension Add to Firefox
+    Minimum version 55 Add & Install Extension Add to Opera Minimum version 46
+    Add & Install Extension Frequently Asked Questions Here are some of our
+    FAQs. If you have any other questions you’d like answered please feel free
+    to email us.
 
     <!-- Question 1 -->
     What is Bookmark?
@@ -145,4 +217,6 @@
       </p>
     </footer>
   </body>
+
+  <script src="./app.js"></script>
 </html>
