@@ -245,7 +245,7 @@ nav {
 
 #downloads {
   max-width: var(--desktop-width);
-  margin: 7rem auto;
+  margin: 9rem auto;
   text-align: center;
 }
 
@@ -264,6 +264,52 @@ nav {
   font-weight: var(--light);
   font-size: var(--size);
   line-height: 1.8rem;
+}
+
+.card-bx {
+  margin: 3rem auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 2rem 0;
+  height: 320px;
+  width: 250px;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(145, 148, 161, 0.3);
+}
+
+.card-text-bx .card-title {
+  font-weight: var(--bold);
+  color: var(--dark-blue);
+  font-size: var(--size);
+  margin-bottom: 0.6rem;
+}
+
+.card-text-bx .card-text {
+  font-size: 13px;
+  color: var(--grayish-blue);
+}
+
+.card-btn-bx a {
+  text-decoration: none;
+  padding: 0.5rem 1.8rem;
+  background-color: var(--soft-blue);
+  color: white;
+  border: 2px solid var(--soft-blue);
+  border-radius: 0.3rem;
+  font-size: 14px;
+  transition-duration: 300ms;
+}
+
+.card-btn-bx a:hover {
+  background-color: white;
+  color: var(--soft-blue);
 }
 
 .attribution {
