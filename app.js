@@ -26,3 +26,10 @@ const initTabs = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initTabs);
+
+const btn = document.getElementsByClassName("submit_btn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  console.log("Clicked");
+});
