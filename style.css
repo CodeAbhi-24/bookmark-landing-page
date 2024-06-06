@@ -266,14 +266,14 @@ nav {
   line-height: 1.8rem;
 }
 
-.card-bx {
+.cus-card-bx {
   margin: 3rem auto;
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
 }
 
-.card {
+.cus-card {
   padding: 2rem 0;
   height: 320px;
   width: 250px;
@@ -284,19 +284,19 @@ nav {
   box-shadow: 0 4px 8px rgba(145, 148, 161, 0.3);
 }
 
-.card-text-bx .card-title {
+.cus-card-text-bx .cus-card-title {
   font-weight: var(--bold);
   color: var(--dark-blue);
   font-size: var(--size);
   margin-bottom: 0.6rem;
 }
 
-.card-text-bx .card-text {
+.cus-card-text-bx .cus-card-text {
   font-size: 13px;
   color: var(--grayish-blue);
 }
 
-.card-btn-bx a {
+.cus-card-btn-bx a {
   text-decoration: none;
   padding: 0.5rem 1.8rem;
   background-color: var(--soft-blue);
@@ -307,9 +307,38 @@ nav {
   transition-duration: 300ms;
 }
 
-.card-btn-bx a:hover {
+.cus-card-btn-bx a:hover {
   background-color: white;
   color: var(--soft-blue);
+}
+
+.accordion {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.accordion-header button {
+  color: var(--dark-blue);
+}
+
+.accordion-header button:hover {
+  color: var(--soft-red);
+}
+
+.accordion-header button:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-header button::after {
+  color: var(--soft-red);
+}
+
+.accordion-body {
+  text-align: left;
+  color: var(--grayish-blue);
+  font-size: 15px;
+  line-height: 2rem;
 }
 
 .attribution {
