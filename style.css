@@ -19,9 +19,6 @@
   --bold: 500;
 }
 
-header {
-}
-
 nav {
   max-width: var(--desktop-width);
   margin: 0 auto;
@@ -243,13 +240,15 @@ nav {
   transition-duration: 300ms;
 }
 
-#downloads {
+#downloads,
+#faq {
   max-width: var(--desktop-width);
   margin: 9rem auto;
   text-align: center;
 }
 
-.dw-title {
+.dw-title,
+.faq-title {
   display: block;
   color: var(--dark-blue);
   font-weight: var(--bold);
@@ -257,7 +256,8 @@ nav {
   margin-bottom: 1.7rem;
 }
 
-.dw-desc {
+.dw-desc,
+.faq-desc {
   width: 44%;
   margin: auto;
   color: var(--grayish-blue);
