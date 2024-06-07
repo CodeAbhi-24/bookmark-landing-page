@@ -138,7 +138,9 @@ const toggleMenu = () => {
 };
 </script>
 <style scoped>
-li:last-child {
-  border-bottom: 0.5px solid hsl(229, 8%, 60%);
+@media screen and (max-width: 768px) {
+  li:last-child {
+    border-bottom: 0.5px solid hsl(229, 8%, 60%);
+  }
 }
 </style>
