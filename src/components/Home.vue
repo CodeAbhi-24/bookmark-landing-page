@@ -15,7 +15,7 @@
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </div>
-        <div class="btns flex gap-8 justify-center lg:justify-start">
+        <div class="flex gap-8 justify-center lg:justify-start">
           <Button
             class="bg-soft-blue border-soft-blue shadow-lg shadow-boxShadow text-white hover:text-soft-blue"
             >Get it on Chrome</Button

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="border-2 px-4 py-2 rounded-md font-semibold hover:bg-white duration-300"
+    class="border-2 px-2 md:px-4 py-2 rounded-md font-semibold hover:bg-white duration-300"
     :style="{ backgroundColor: bgColor }"
     @click="handleClick"
   >
