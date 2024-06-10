@@ -6,7 +6,7 @@
       class="max-container px-6 py-6 flex justify-between items-center lg:px-16"
     >
       <div>
-        <a href="#">
+        <a href="#home">
           <img src="/images/logo-bookmark.svg" alt="logo" />
         </a>
       </div>
@@ -23,7 +23,9 @@
           </li>
         </ul>
         <div class="ml-12">
-          <Button bgColor="bg-soft-red" @click="login" class="uppercase"
+          <Button
+            @click="login"
+            class="uppercase bg-soft-red border-2 border-red-400 text-white shadow-lg shadow-boxShadow hover:text-soft-red"
             >Login</Button
           >
         </div>
@@ -48,7 +50,7 @@
         <div class="w-[375px] h-full text-center">
           <div class="flex flex-col justify-between py-8 px-8">
             <div class="flex justify-between items-center">
-              <a href="#">
+              <a href="#home" @click="toggleMenu">
                 <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <path
@@ -78,6 +80,7 @@
                   v-for="link in links"
                   :key="link.id"
                   class="border-grayish-blue border-t-[0.5px] py-6 uppercase text-white font-normal tracking-[1px] hover:text-soft-red duration-300"
+                  @click="toggleMenu"
                 >
                   <a :href="link.to">
                     {{ link.name }}
@@ -87,7 +90,7 @@
               <div class="mt-7">
                 <Button
                   @click="login"
-                  class="uppercase bg-transparent w-full border-grayish-blue tracking-widest"
+                  class="uppercase text-white bg-transparent w-full border-grayish-blue tracking-widest hover:text-dark-blue focus:text-dark-blue"
                   >Login</Button
                 >
               </div>
