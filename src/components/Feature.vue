@@ -14,12 +14,12 @@
       <div>
         <!-- tab btn box -->
         <div
-          class="bg-transparent flex flex-col mb-14 lg:flex-row lg:justify-center lg:gap-8"
+          class="bg-transparent mx-auto flex flex-col mb-14 lg:w-[50%] lg:border-b-[1px] lg:flex-row lg:justify-center lg:gap-16"
         >
           <!-- first button -->
           <div class="border-t-[1px] lg:border-none">
             <button
-              class="text-grayish-blue outline-none cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
+              class="text-grayish-blue cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
               :class="{
                 'text-dark-blue border-b-2 border-red-400': activeTab === 1,
               }"
@@ -32,7 +32,7 @@
           <!-- second button -->
           <div class="border-t-[1px] lg:border-none">
             <button
-              class="text-grayish-blue outline-none cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
+              class="text-grayish-blue cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
               :class="{
                 'text-dark-blue border-b-2 border-red-400': activeTab === 2,
               }"
@@ -45,7 +45,7 @@
           <!-- third button -->
           <div class="border-t-[1px] border-b-[1px] lg:border-none">
             <button
-              class="text-grayish-blue outline-none cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
+              class="text-grayish-blue cursor-pointer py-3.5 pb-4 duration-300ms text-base hover:text-dark-blue hover:border-b-2 hover:border-red-400"
               :class="{
                 'text-dark-blue border-b-2 border-red-400': activeTab === 3,
               }"
