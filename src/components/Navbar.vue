@@ -120,7 +120,7 @@ const links = [
   {
     id: 0,
     name: "Features",
-    to: "#",
+    to: "#feature",
   },
   {
     id: 1,
